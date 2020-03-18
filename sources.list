@@ -1,0 +1,52 @@
+#------------------------------------------------------------------------------#
+#                            OFFICIAL UBUNTU REPOS                             #
+#------------------------------------------------------------------------------#
+
+
+###### Ubuntu Main Repos
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse 
+deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse 
+
+###### Ubuntu Update Repos
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse 
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse 
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic-proposed main restricted universe multiverse 
+deb http://ru.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse 
+deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse 
+deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic-updates main restricted universe multiverse 
+deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic-proposed main restricted universe multiverse 
+deb-src http://ru.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse 
+
+#------------------------------------------------------------------------------#
+#                           UNOFFICIAL UBUNTU REPOS                            #
+#------------------------------------------------------------------------------#
+
+
+###### 3rd Party Binary Repos
+
+#### MongoDB - http://www.mongodb.org/
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
+
+#### MultiSystem - http://liveusb.info/dotclear/
+## Run this command: wget -q http://liveusb.info/multisystem/depot/multisystem.asc -O- | sudo apt-key add -
+deb http://liveusb.info/multisystem/depot all main
+
+#### Syncthing - https://syncthing.net/
+## Run this command: curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
+deb http://apt.syncthing.net/ syncthing release
+
+#### Webmin - http://www.webmin.com
+## Run this command: wget http://www.webmin.com/jcameron-key.asc -O- | sudo apt-key add -
+deb http://download.webmin.com/download/repository sarge contrib
+
+#### Xorg Edgers PPA - https://launchpad.net/~xorg-edgers
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8844C542  
+deb http://ppa.launchpad.net/xorg-edgers/ppa/ubuntu bionic main
+
+
+####### 3rd Party Source Repos
+
+#### Xorg Edgers PPA (Source) - https://launchpad.net/~xorg-edgers
+## Run this command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 8844C542  
+deb-src http://ppa.launchpad.net/xorg-edgers/ppa/ubuntu bionic main
