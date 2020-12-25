@@ -14,6 +14,15 @@ python manage.py runserver
 
 python manage.py startapp news
 
+pip freeze > requirements. txt
+
+pip install -r requirements.txt
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
 
   {
     "name": "Django",
@@ -27,3 +36,5 @@ python manage.py startapp news
         "--no-color",
         "--noreload"
     ],
+
+
