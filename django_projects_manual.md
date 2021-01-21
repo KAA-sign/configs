@@ -38,3 +38,5 @@ python manage.py createsuperuser
     ],
 
 
+git fetch origin
+git checkout -b <название ветки> origin/<название ветки>
