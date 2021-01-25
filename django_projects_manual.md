@@ -1,9 +1,12 @@
 Установка виртуального окружения
 ====================================
+```
 python3 -m venv venv
+```
 
 Активация виртуального окружения
 ====================================
+```
 source venv/bin/activate
 
 pip install Django
@@ -40,3 +43,4 @@ python manage.py createsuperuser
 
 git fetch origin
 git checkout -b <название ветки> origin/<название ветки>
+```
